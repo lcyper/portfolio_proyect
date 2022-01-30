@@ -2,7 +2,7 @@
     {
         "title": "Sefaria - daily study",
         "img":  "sefaria.jpg",
-        "description":"An app for...",
+        "description":"An app where you can do your portion of daily torah study and track your progress.",
         "Technologies":["Dart","Futtter"],
         "body":[
             {
@@ -17,7 +17,7 @@
     },{
         "title": "Kosher Argentina",
         "img":  "kosher-argentina.jpg",
-        "description":"An app for...",
+        "description":"An app where you can see all the Kosher products at your fingertips, all the lists in one place!",
         "Technologies":["Dart","Futtter", "Camera barScanner"],
         "body":[
             {

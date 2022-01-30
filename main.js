@@ -45,6 +45,10 @@ for (const index in proyectsList) {
     title.textContent = `- ${proyectsList[index]['title']} -`;
     details.appendChild(title);
 
+    let description = document.createElement("p");
+    description.textContent = proyectsList[index]['description'];
+    details.appendChild(description);
+
     a.appendChild(details);
     documentFragment.appendChild(a);
 
