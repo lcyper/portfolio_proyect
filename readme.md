@@ -1,9 +1,11 @@
-# Portfolio pryect for Developer
+# Portfolio proyect for Developer
 
 ### simple portfolio page
 
-<!-- https://markdowntohtml.com/ -->
-<!-- esqueleto inicial -->
+    using
+    https://markdowntohtml.com/
+    
+    esqueleto inicial:
 
 ![bears](http://placebear.com/200/200)
 
