@@ -1,10 +1,10 @@
 [
     {
-        "title": "Beginner",
-        "folder":  "/beginner/"
-    },
-    {
         "title": "Sefaria - daily study",
         "folder":  "/sefaria/"
+    },
+    {
+        "title": "Beginner",
+        "folder":  "/beginner/"
     }
 ]
