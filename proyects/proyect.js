@@ -37,6 +37,35 @@ for (const bloc of proyect["body"]) {
     /* <h3>title h3</h3>
     <p>content</p> */
 }
+
+if (proyect["github-repo"] != null) {
+    let hr = document.createElement("hr");
+    documentFragment.appendChild(hr);
+
+    let githubRepoLink = document.createElement("a");
+    githubRepoLink.textContent = "Github Repository Link"
+    githubRepoLink.href = proyect["github-repo"];
+    documentFragment.appendChild(githubRepoLink);
+}
+if (proyect["app-store-link"] != null) {
+    let hr = document.createElement("hr");
+    documentFragment.appendChild(hr);
+
+    let appStroreLink = document.createElement("a");
+    appStroreLink.textContent = "App Store Link"
+    appStroreLink.href = proyect["app-store-link"];
+    documentFragment.appendChild(appStroreLink);
+}
+if (proyect["google-play-link"] != null) {
+    let hr = document.createElement("hr");
+    documentFragment.appendChild(hr);
+
+    let googlePlayLink = document.createElement("a");
+    googlePlayLink.textContent = "App Store Link"
+    googlePlayLink.href = proyect["google-play-link"];
+    documentFragment.appendChild(googlePlayLink);
+}
+
 contentContainer.appendChild(documentFragment);
 
 let technologies = "";
