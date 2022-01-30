@@ -39,7 +39,7 @@ section{
 }
 main a{
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     padding: 0.5em;
     box-sizing: border-box;
     position: relative;
