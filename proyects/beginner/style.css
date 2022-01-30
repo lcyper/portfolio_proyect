@@ -1,0 +1,55 @@
+:root{
+    --main-bg-color: rgb(202, 87, 20);
+    --header-bg-color: rgb(238, 104, 64);
+    --text-color: white;
+}
+
+body{
+    width: 100%;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+body header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body header img{
+    max-width: 100%;
+}
+body main{
+    padding: 2em;
+}
+
+body main blockquote::before , body main blockquote::after{
+    content: '< ';
+    display: inline;
+    font-size: 2em;
+    color: rgb(228, 208, 32);
+    font-weight: bold;
+}
+body main blockquote::after{
+    content: ' >';
+}
+body main blockquote{
+    background-color: chocolate;
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+body main blockquote p:last-child {
+    color: rgb(238, 238, 88);
+}
+
+a{
+    color: yellow;
+}
+a:hover{
+    font-size: 1.1em;
+    color: rgb(247, 228, 203);
+}
