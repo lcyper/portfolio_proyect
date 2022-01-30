@@ -1,10 +1,34 @@
 [
     {
         "title": "Sefaria - daily study",
-        "folder":  "/sefaria/"
-    },
-    {
-        "title": "Beginner",
-        "folder":  "/beginner/"
+        "img":  "sefaria.jpg",
+        "description":"An app for...",
+        "Technologies":["Dart","Futtter"],
+        "body":[
+            {
+            "title":"What I did:",
+             "content":"It is a mobile app where you can follow to study a special section for that day from different books, it is geared for daily study for Orthodox Jews."
+            },
+            {
+            "title":"How it works:",
+            "content":"You have on the main screen different links to choose from, inside you will have the content with various settings available, you can also mark if you completed it and a section dedicated to progress, it is a pretty complete application, I hope you enjoy it!"
+            }
+        ]
+    },{
+        "title": "Kosher Argentina",
+        "img":  "kosher-argentina.jpg",
+        "description":"An app for...",
+        "Technologies":["Dart","Futtter", "Camera barScanner"],
+        "body":[
+            {
+            "title":"What I did:",
+                "content":"It's a mobile app where you can find all the products supervised by rabbis from different lists in one place! It's geared for people who take care of themselves with the Kosher diet."
+            },
+            {
+            "title":"What I did:",
+            "content":"You have on the main screen different categories for a good organization, you also have the possibility to search a product both by name, brand, barcode, it is a pretty complete application, I hope you enjoy it!"
+            }
+        ]
+        
     }
 ]
