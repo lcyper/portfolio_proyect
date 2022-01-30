@@ -3,7 +3,7 @@
         "title": "Sefaria - daily study",
         "img":  "sefaria.jpg",
         "description":"An app where you can do your portion of daily torah study and track your progress.",
-        "Technologies":["Dart","Futtter"],
+        "Technologies":["Dart","Futtter", "Bloc"],
         "body":[
             {
             "title":"What I did:",
@@ -19,16 +19,36 @@
         "img":  "kosher-argentina.jpg",
         "description":"An app where you can see all the Kosher products at your fingertips, all the lists in one place!",
         "Technologies":["Dart","Futtter", "Camera barScanner"],
+        "github-repo":"https://github.com/lcyper/kosher_argentina",
         "body":[
             {
             "title":"What I did:",
                 "content":"It's a mobile app where you can find all the products supervised by rabbis from different lists in one place! It's geared for people who take care of themselves with the Kosher diet."
             },
             {
-            "title":"What I did:",
+            "title":"How it works:",
             "content":"You have on the main screen different categories for a good organization, you also have the possibility to search a product both by name, brand, barcode, it is a pretty complete application, I hope you enjoy it!"
             }
         ]
         
+    },
+    {
+        "title": "The Movie DB",
+        "img":  "themoviedb.jpg",
+        "description":"An app where you can see all the movies in one place!",
+        "Technologies":["Dart","Futtter", "Provider"],
+        "github-repo":"https://github.com/lcyper/themoviedb",
+        "body":[
+            {
+            "title":"What I did:",
+                "content":"I brought the movies from the database of www.themoviedb.org and display them, also actors and information about each movie.\nThis was the final project in the Flutter 2021 course."
+            },
+            {
+            "title":"How it works:",
+            "content":"It's a mobile application where you can see the technical sheet of the movies and add them to favorites, it also has a search and particular information about the movie itself as its actors/characters."
+            }
+        ]
+        
     }
+    
 ]
