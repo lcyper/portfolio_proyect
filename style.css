@@ -78,3 +78,12 @@ main a div.details p {
     justify-content: center;
     align-items: center;
 }
+/* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width : 900px) {
+    main a div.details p:first-child{
+        font-size: 1.3em;
+    }
+    main a div.details p{
+    font-size: 1em;
+    }
+}
