@@ -36,6 +36,7 @@ body main blockquote::after{
     content: ' >';
 }
 body main blockquote{
+    margin: 1em 0.5em;
     background-color: chocolate;
     padding: 1em;
     border-radius: 15px;
