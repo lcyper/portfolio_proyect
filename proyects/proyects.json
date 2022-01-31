@@ -49,6 +49,24 @@
             }
         ]
         
+    },
+    {
+        "title": "Likutei Torah",
+        "img":  "likutei-tora.jpg",
+        "description":"An app where you can study the book of likutei torah",
+        "Technologies":["Dart","Futtter", "bloc","AudioPlayer","VideoPlayer","Pdf"],
+        "body":[
+            {
+            "title":"What I did:",
+                "content":"I show the content in pdf, text, there is also multimedia content such as audios and videos, all within the app!"
+            },
+            {
+            "title":"How it works:",
+            "content":"It is a mobile application where you can view the study material in different formats such as plain text or the original book in pdf, at the same time you can complement it with an audio or video of a rabbi, do not forget that you can also track your progress!"
+            }
+        ]
+        
     }
+    
     
 ]
