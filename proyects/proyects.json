@@ -3,15 +3,15 @@
         "title": "Sefaria - daily study",
         "img":  "sefaria.jpg",
         "description":"An app where you can do your portion of daily torah study and track your progress.",
-        "Technologies":["Dart","Futtter", "Bloc"],
+        "Technologies":["Dart","Futtter", "Bloc", "Json"],
         "body":[
             {
-            "title":"What I did:",
-             "content":"It is a mobile app where you can follow to study a special section for that day from different books, it is geared for daily study for Orthodox Jews."
+                "title":"What I did:",
+                "content":"It is a mobile app where you can follow to study a special section for that day from different books, it is geared for daily study for Orthodox Jews."
             },
             {
-            "title":"How it works:",
-            "content":"You have on the main screen different links to choose from, inside you will have the content with various settings available, you can also mark if you completed it and a section dedicated to progress, it is a pretty complete application, I hope you enjoy it!"
+                "title":"How it works:",
+                "content":"You have on the main screen different links to choose from, inside you will have the content with various settings available, you can also mark if you completed it and a section dedicated to progress, it is a pretty complete application, I hope you enjoy it!"
             }
         ]
     },{
@@ -19,15 +19,20 @@
         "img":  "kosher-argentina.jpg",
         "description":"An app where you can see all the Kosher products at your fingertips, all the lists in one place!",
         "Technologies":["Dart","Futtter", "Camera barScanner"],
-        "github-repo":"https://github.com/lcyper/kosher_argentina",
+        "links":[
+            {
+                "title":"github-repo",
+                "url":"https://github.com/lcyper/kosher_argentina"
+            }
+        ],
         "body":[
             {
-            "title":"What I did:",
+                "title":"What I did:",
                 "content":"It's a mobile app where you can find all the products supervised by rabbis from different lists in one place! It's geared for people who take care of themselves with the Kosher diet."
             },
             {
-            "title":"How it works:",
-            "content":"You have on the main screen different categories for a good organization, you also have the possibility to search a product both by name, brand, barcode, it is a pretty complete application, I hope you enjoy it!"
+                "title":"How it works:",
+                "content":"You have on the main screen different categories for a good organization, you also have the possibility to search a product both by name, brand, barcode, it is a pretty complete application, I hope you enjoy it!"
             }
         ]
         
@@ -37,7 +42,12 @@
         "img":  "themoviedb.jpg",
         "description":"An app where you can see all the movies in one place!",
         "Technologies":["Dart","Futtter", "Provider"],
-        "github-repo":"https://github.com/lcyper/themoviedb",
+        "links":[
+            {
+                "title":"github-repo",
+                "url":"https://github.com/lcyper/themoviedb"
+            }
+        ],
         "body":[
             {
             "title":"What I did:",
@@ -54,7 +64,7 @@
         "title": "Likutei Torah",
         "img":  "likutei-tora.jpg",
         "description":"An app where you can study the book of likutei torah",
-        "Technologies":["Dart","Futtter", "bloc","AudioPlayer","VideoPlayer","Pdf"],
+        "Technologies":["Dart","Futtter", "Bloc","AudioPlayer","VideoPlayer","Pdf"],
         "body":[
             {
             "title":"What I did:",

@@ -38,33 +38,38 @@ for (const bloc of proyect["body"]) {
     <p>content</p> */
 }
 
-if (proyect["github-repo"] != null) {
-    let hr = document.createElement("hr");
-    documentFragment.appendChild(hr);
+if (proyect["links"] != null) {
+    // documentFragment.appendChild(hr);
+    for (const linkData of proyect["links"]) {
 
-    let githubRepoLink = document.createElement("a");
-    githubRepoLink.textContent = "Github Repository Link"
-    githubRepoLink.href = proyect["github-repo"];
-    documentFragment.appendChild(githubRepoLink);
+        let p = document.createElement("p");
+        let link = document.createElement("a");
+        let str = linkData['title'];
+        str = str.charAt(0).toUpperCase() + str.slice(1);
+        link.textContent = str;
+        link.href = linkData['url'];
+        p.appendChild(link);
+        documentFragment.appendChild(p);
+    }
 }
-if (proyect["app-store-link"] != null) {
-    let hr = document.createElement("hr");
-    documentFragment.appendChild(hr);
+// if (proyect["app-store-link"] != null) {
+//     let hr = document.createElement("hr");
+//     documentFragment.appendChild(hr);
 
-    let appStroreLink = document.createElement("a");
-    appStroreLink.textContent = "App Store Link"
-    appStroreLink.href = proyect["app-store-link"];
-    documentFragment.appendChild(appStroreLink);
-}
-if (proyect["google-play-link"] != null) {
-    let hr = document.createElement("hr");
-    documentFragment.appendChild(hr);
+//     let appStroreLink = document.createElement("a");
+//     appStroreLink.textContent = "App Store Link"
+//     appStroreLink.href = proyect["app-store-link"];
+//     documentFragment.appendChild(appStroreLink);
+// }
+// if (proyect["google-play-link"] != null) {
+//     let hr = document.createElement("hr");
+//     documentFragment.appendChild(hr);
 
-    let googlePlayLink = document.createElement("a");
-    googlePlayLink.textContent = "App Store Link"
-    googlePlayLink.href = proyect["google-play-link"];
-    documentFragment.appendChild(googlePlayLink);
-}
+//     let googlePlayLink = document.createElement("a");
+//     googlePlayLink.textContent = "App Store Link"
+//     googlePlayLink.href = proyect["google-play-link"];
+//     documentFragment.appendChild(googlePlayLink);
+// }
 
 contentContainer.appendChild(documentFragment);
 
