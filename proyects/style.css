@@ -23,6 +23,13 @@ body header img{
 }
 body main{
     padding: 2em;
+    padding-top: 0;
+}
+body main #content p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.3em;
+    text-indent: 1em;
 }
 
 body main blockquote::before , body main blockquote::after{
@@ -53,6 +60,6 @@ a{
     color: yellow;
 }
 a:hover{
-    font-size: 1.1em;
-    color: rgb(247, 228, 203);
+    /* font-size: 1.1em; */
+    color: blue;
 }
