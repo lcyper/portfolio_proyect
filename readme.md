@@ -5,10 +5,6 @@
 
 [idea of this portfolio](https://miriamhaart.com/products)
 
-    - you can add link to publish apps:
-    "app-store-link":"",
-    "google-play-link":"",
-
 ### simple portfolio page
 
     using
@@ -30,4 +26,4 @@ you can....
 
 > Technologies
 
-[A link](https://markdowntohtml.com) to the repositori.
+[A link](https://markdowntohtml.com) to the repository.
