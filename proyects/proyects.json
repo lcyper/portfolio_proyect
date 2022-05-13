@@ -76,6 +76,33 @@
             }
         ]
         
+    },
+    {
+        "title": "Qrowder - Make It Happen!",
+        "img":  "qrowder.jpg",
+        "description":"An application for making and attending events",
+        "Technologies":["Dart","Futtter", "WebView","Permissions"],
+        "body":[
+            {
+            "title":"What I did:",
+                "content":"I show the content inside a browser (a frame), the idea was to cheaply make an app available in the stores for people to download."
+            },
+            {
+            "title":"My challenges:",
+            "content":"I had to make a mobile uploader, permission for the camera and gallery, it was also a challenge to publish myself for the first time in the stores, both Google Play and App Store."
+            }
+        ],
+        "links":[
+            {
+                "title":"Google Play",
+                "url":"https://play.google.com/store/apps/details?id=com.greelow.qrowderAppWebView"
+            },
+            {
+                "title":"App Store",
+                "url":"https://apps.apple.com/us/app/qrowder/id1606774107"
+            }
+        ]
+        
     }
     
     
