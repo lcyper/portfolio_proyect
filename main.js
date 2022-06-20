@@ -51,7 +51,5 @@ for (const index in proyectsList) {
 
     a.appendChild(details);
     documentFragment.appendChild(a);
-
-
 }
 sectionHtml.appendChild(documentFragment);
