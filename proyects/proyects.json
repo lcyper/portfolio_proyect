@@ -21,7 +21,7 @@
         "Technologies":["Dart","Futtter", "Camera barScanner"],
         "links":[
             {
-                "title":"github-repo",
+                "icon-type":"logo-github",
                 "url":"https://github.com/lcyper/kosher_argentina"
             }
         ],
@@ -44,7 +44,7 @@
         "Technologies":["Dart","Futtter", "Provider"],
         "links":[
             {
-                "title":"github-repo",
+                "icon-type":"logo-github",
                 "url":"https://github.com/lcyper/themoviedb"
             }
         ],
@@ -94,11 +94,12 @@
         ],
         "links":[
             {
-                "title":"Google Play",
+                
+                "icon-type":"logo-google-playstore",
                 "url":"https://play.google.com/store/apps/details?id=com.greelow.qrowderAppWebView"
             },
             {
-                "title":"App Store",
+                "icon-type":"logo-apple-appstore",
                 "url":"https://apps.apple.com/us/app/qrowder/id1606774107"
             }
         ]

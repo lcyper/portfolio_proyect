@@ -1,6 +1,6 @@
 function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    let vars = {};
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
         vars[key] = value;
     });
     return vars;
@@ -19,16 +19,18 @@ let responseText = httpGet('./proyects.json');
 let proyectsList = JSON.parse(responseText);
 let proyect = proyectsList[proyectIndex];
 
-document.querySelector('body header img').src = `./images/${proyect["img"]}`;
-document.querySelector('body header h1').textContent = proyect["title"];
+document.querySelector('body main img').src = `./images/${proyect["img"]}`;
+document.querySelector('body main h1').textContent = proyect["title"];
 
 let contentContainer = document.querySelector('body div#content');
 let documentFragment = document.createDocumentFragment();
 
 for (const bloc of proyect["body"]) {
 
-    let title = document.createElement("h3");
-    title.textContent = bloc["title"];
+    let list = document.createElement("li");
+    let title = document.createElement("h2");
+    list.textContent = bloc["title"];
+    title.appendChild(list);
     documentFragment.appendChild(title);
 
     let content = document.createElement("p");
@@ -39,42 +41,30 @@ for (const bloc of proyect["body"]) {
 }
 
 if (proyect["links"] != null) {
-    // documentFragment.appendChild(hr);
+    let links = document.createDocumentFragment();
     for (const linkData of proyect["links"]) {
-
-        let p = document.createElement("p");
+        // <a href="#" target="_blank">
+        //     <span class="iconify" data-icon="ion:logo-apple-appstore"></span>
+        // </a>
         let link = document.createElement("a");
-        let str = linkData['title'];
-        str = str.charAt(0).toUpperCase() + str.slice(1);
-        link.textContent = str;
+        let span = document.createElement("span");
+        span.className = 'iconify';
+        let iconType = linkData['icon-type'];
+        span.setAttribute("data-icon", `ion:${iconType}`);
         link.href = linkData['url'];
-        p.appendChild(link);
-        documentFragment.appendChild(p);
+        link.target = '_blank'
+        link.appendChild(span);
+        links.appendChild(link);
     }
+    document.getElementById('icons').appendChild(links);
 }
-// if (proyect["app-store-link"] != null) {
-//     let hr = document.createElement("hr");
-//     documentFragment.appendChild(hr);
-
-//     let appStroreLink = document.createElement("a");
-//     appStroreLink.textContent = "App Store Link"
-//     appStroreLink.href = proyect["app-store-link"];
-//     documentFragment.appendChild(appStroreLink);
-// }
-// if (proyect["google-play-link"] != null) {
-//     let hr = document.createElement("hr");
-//     documentFragment.appendChild(hr);
-
-//     let googlePlayLink = document.createElement("a");
-//     googlePlayLink.textContent = "App Store Link"
-//     googlePlayLink.href = proyect["google-play-link"];
-//     documentFragment.appendChild(googlePlayLink);
-// }
 
 contentContainer.appendChild(documentFragment);
 
-let technologies = "";
+let technologies = document.createDocumentFragment();
 for (const technologi of proyect["Technologies"]) {
-    technologies += `#${technologi} `;
+    let span = document.createElement("span");
+    span.textContent = `#${technologi}`;
+    technologies.appendChild(span);
 }
-document.querySelector('body blockquote p:last-child').textContent = technologies;
+document.querySelector('body blockquote').appendChild(technologies);
